@@ -1,9 +1,10 @@
 {
-  "name": "node-js-getting-started",
-  "version": "0.3.0",
-  "description": "A sample Node.js app using Express 4",
+  "name": "ashers-work",
+  "version": "0.0.1",
+  "description": "portfolio",
   "engines": {
-    "node": "13.x"
+    "node": "13.x",
+    "npm": "6.x"
   },
   "main": "index.js",
   "scripts": {
@@ -12,20 +13,18 @@
   },
   "dependencies": {
     "ejs": "^2.5.6",
-    "express": "^4.15.2"
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "request": "^2.81.0",
-    "tape": "^4.7.0"
+    "tape": "^4.7.0",
+    "gulp": "^4.0.2",
+    "gulp-watch": "^5.0.1",
+    "gulp-webserver": "^0.9.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/RedcoatAsher/node-js-getting-started"
   },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
   "license": "MIT"
 }
