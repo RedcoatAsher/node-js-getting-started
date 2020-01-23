@@ -1,0 +1,1009 @@
+/* -- GLOBAL -- */
+html,
+body {
+    font-family: "freight-sans-pro", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3b3b3b;
+    background-image: url("../images/ap_dark.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    -webkit-background-size: 50pt 50pt;
+    background-size: 60pt 60pt;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.siteWrapper {
+    background: #fff;
+}
+
+.link {
+    cursor: pointer;
+}
+
+a,
+button,
+a:focus,
+button:focus {
+    outline: none;
+}
+
+a,
+a:hover,
+span.social {
+    cursor: pointer;
+    transition: all .3s ease-in-out !important;
+    text-decoration: none;
+}
+
+h6.about a,
+.social,
+.highlight {
+    color: #f05151 !important;
+}
+
+h6.about a:hover,
+a:hover {
+    color: #000 !important;
+}
+
+.socicons {
+    margin: 10pt 0;
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: #999;
+}
+
+::selection {
+    color: #fff;
+    background-color: #999;
+}
+
+.modal-dialog.resume,
+.resume .modal-content {
+    width: 100vw !important;
+    height: 100vh !important;
+    /* padding: 5%; */
+    /* height: auto; */
+    background-color: white;
+    border-radius: 0 !important;
+}
+
+.challenge {
+    padding: 0 10pt !important;
+}
+
+.challenge h7 {
+    padding-top: 10pt;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+    border: none;
+}
+
+.modal-body {
+    background-color: #fff;
+    overflow-x: scroll;
+    padding: 0;
+    /* max-height: 70vh; */
+    height: 100%;
+}
+
+.img-profile {
+    max-width: 100pt;
+    max-height: 100pt;
+}
+
+object {
+    width: 100%;
+    height: 70vh;
+}
+
+.modal-dialog {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 40pt !important;
+    font-weight: 500;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 20pt;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 5pt;
+    opacity: .6;
+}
+
+h6 {
+    padding: 24pt 0 0;
+}
+
+h6.about {
+    padding: 0;
+}
+
+h7 {
+    font-size: 16pt;
+    font-weight: 700;
+}
+
+h8 {
+    font-size: 16pt;
+}
+
+h9 {
+    font-family: "freight-sans-pro", sans-serif;
+    font-size: 18pt;
+    text-align: center;
+}
+
+h6, li {
+    font-size: 14pt;
+    line-height: 1.8;
+}
+
+p {
+    font-size: 16pt;
+    text-align: justify;
+    color: #3b3b3b;
+}
+
+.offwhite {
+    background: #f0f0f0;
+}
+
+.offwhite.no-border {
+    margin: -10pt 0 0 0;
+}
+
+h3, h4, h5 {
+    color: #fff;
+}
+
+h1, h2, h6, h7 {
+    color: #727272;
+}
+
+h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 30pt;
+}
+
+.h9 {
+    font-size: 16pt;
+}
+
+.tab {
+    margin: 0 10pt 0 0;
+}
+
+.wFull {
+    width: 100%;
+}
+
+.hFull {
+    height: 100%;
+}
+
+.sep {
+    margin: 10pt 5pt !important;
+}
+
+.sepL {
+    margin: 10pt 10pt 10pt 5pt !important;
+}
+
+.sepR {
+    margin: 10pt 5pt 10pt 10pt !important;
+}
+
+.sepT {
+    margin: 10pt 5pt 0 !important;
+}
+
+.sepB {
+    margin: 0 5pt !important;
+}
+
+.sep-full {
+    margin: 0 10pt !important;
+}
+
+/* -- NAVBAR -- */
+.navLogo {
+    width: 30%;
+    height: auto;
+    max-height: 40pt;
+}
+
+.navbar {
+    box-shadow: 0 4px 20px -2px #727272;
+}
+
+ul.navbar-nav li {
+    font-size: 14pt;
+    padding: 0 10px;
+}
+
+ul.navbar-nav {
+    margin-left: auto !important;
+}
+
+/* -- HEADER -- */
+.jumbo {
+    display: flex;
+    /* [1] */
+    height: 80vh;
+    justify-content: center;
+    /* [2] */
+    align-items: center;
+    /* [3] */
+}
+
+.modal-body.resume {
+    background: #555;
+}
+
+.tags {
+    height: 20vh;
+}
+
+.tagline {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: auto;
+    padding-top: 100pt;
+    justify-content: center;
+}
+
+.imgThumb {
+    width: 45%;
+    height: 40%;
+    margin: 0 auto;
+    padding-top: 200pt;
+}
+
+.img {
+    width: 45%;
+    height: 40%;
+    margin: 0 auto;
+}
+
+.twentytwenty-container {
+    min-height: 534px !important;
+}
+
+.imgSlack {
+    background: url(../images/slack-logo.svg) no-repeat center center;
+}
+
+.imgSlackIn {
+    background: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/cee21c52923975.5922162a783dc.gif) no-repeat center center;
+    background-size: contain;
+}
+
+.imgPlayht {
+    background: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/cee21c52923975.5922162a783dc.gif) no-repeat center center;
+    background-size: contain;
+}
+
+.imgKanban {
+    height: 40%;
+    background: url(../images/kanban.svg) no-repeat center center;
+    background-size: contain;
+}
+
+.imgMedium {
+    background: url(../images/float-play-ht-medium.png) no-repeat center center;
+    background-size: contain;
+}
+
+.imgOtter {
+    background: url(../images/otter.svg) no-repeat center center;
+    background-size: contain;
+}
+
+.imgMB {
+    background: url(../images/mb.svg) no-repeat center center;
+    background-size: contain;
+}
+
+.imgDelta {
+    background: url(../images/delta.svg) no-repeat center center;
+    background-size: contain;
+}
+
+.imgWalmart {
+    background: url(../images/walmart.svg) no-repeat center center;
+    background-size: contain;
+}
+
+.r90deg {
+    margin: 5pt 0 0 0;
+    transform: rotate(90deg);
+}
+
+.imgKaarma {
+    /* transform: rotate(27deg); */
+    background: url(../images/mykaarma.svg) no-repeat center center;
+}
+
+.navbar {
+    max-height: 60pt;
+}
+
+/* -- BADGES -- */
+.badge-lg {
+    font-size: 120%;
+    margin: 0 3pt;
+    padding: 5pt 10pt;
+    color: #fff;
+}
+
+.badge-3b {
+    background-color: #3b3b3b !important;
+}
+
+.badge-ux {
+    background-color: #9360a8 !important;
+}
+
+.badge-ui {
+    background-color: #42bc97 !important;
+}
+
+.badge-ia {
+    background-color: #007dc3 !important;
+}
+
+.badge-ixd {
+    color: #727272;
+    background-color: #faca18 !important;
+}
+
+.legend {
+    display: flex;
+    /* [1] */
+    justify-content: center;
+    /* [2] */
+    align-items: center;
+    /* [3] */
+}
+
+.legend a {
+    opacity: .8;
+}
+
+.legend a:hover {
+    opacity: 1;
+}
+
+/* .badge-ux:hover,
+.badge-ui:hover,
+.badge-ia:hover,
+.badge-ixd:hover {
+    opacity: 1;
+} */
+.badge-ixd h3,
+.badge-ixd h4 {
+    color: #727272;
+}
+
+.badge-blank-neg {
+    height: 22pt;
+    background-color: #727272;
+}
+
+.badge-blank-pos {
+    height: 22pt;
+    background-color: #fff;
+}
+
+.badge-blank-pos.ux,
+.badge-blank-neg.ux,
+.ux {
+    background-color: #9360a8cc;
+    color: #fff;
+}
+
+.badge-blank-pos.ui,
+.badge-blank-neg.ui,
+.ui {
+    background-color: #42bc97cc;
+    color: #fff;
+}
+
+.badge-blank-pos.ia,
+.badge-blank-neg.ia,
+.ia {
+    background-color: #007dc3cc;
+    color: #fff;
+}
+
+.badge-blank-pos.ixd,
+.badge-blank-neg.ixd,
+.ixd {
+    /* color: #faca18; */
+    background-color: #f5d56d;
+    color: #3b3b3b;
+}
+
+/* -- CARDS -- */
+.aCard {
+    margin: 0 10pt;
+    padding: 30pt 20pt 10pt;
+}
+
+.aCardLong {
+    margin: 0 10pt;
+    padding: 30pt 20pt;
+}
+
+.cat {
+    margin: 0 15pt 0 0;
+}
+
+.modal-header .close {
+    margin: -5pt 10pt 0 0;
+    padding: 8pt;
+    transform: scale(1.7);
+}
+
+.pad {
+    padding: 30pt;
+}
+
+.padT {
+    padding: 30pt 0 0 0;
+}
+
+.padB {
+    padding: 0 0 30pt 0;
+}
+
+.para-pad {
+    padding: 45pt 30pt 15pt;
+}
+
+.para-pad>.row>.col {
+    padding: 0;
+}
+
+.para-pad>.row {
+    padding: 5pt 0;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.modal-body {
+    overflow-x: scroll;
+    padding: 0;
+}
+
+.modal-header {
+    height: 100%;
+    max-height: 50pt;
+}
+
+.modal-splash {
+    margin: 0;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.badge-ux button.close,
+.badge-ui button.close,
+.badge-ia button.close {
+    color: #fff;
+}
+
+.badge-ixd button.close {
+    color: #3b3b3b;
+}
+
+.modal-splash {
+    /* height: 90%; */
+    height: 350px;
+}
+
+.slack-gif,
+.otter-gif,
+.delta-gif,
+.delta-png {
+    padding: 0;
+    background-size: contain !important;
+}
+
+.walmart-gif {
+    padding: 0;
+    background-size: cover !important;
+}
+
+.gif {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    min-height: 365pt;
+}
+
+.delta {
+    opacity: 0.0;
+    max-width: 60vw;
+    height: auto;
+    padding: 0;
+}
+
+.cd-image-label {
+    background: #3b3b3bcc;
+}
+
+.bgDarkGray {
+    background: #3b3b3b;
+}
+
+.cd-resize-img.bgDarkGray img {
+    opacity: .85;
+}
+
+.button-socicon [class^="socicon-"],
+.button-socicon [class*=" socicon-"] {
+    margin-right: .3em;
+    vertical-align: middle;
+}
+
+.socicon {
+    font-size: 28pt;
+}
+
+.blue {
+    /* color: #007dc3; */
+    color: #1e88e5;
+}
+
+.red {
+    color: #d9534f;
+}
+
+.yellow {
+    color: #ffe066;
+}
+
+.space {
+    margin: 0 5pt;
+}
+
+.margin0 {
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.socicon-twitter:hover {
+    color: #1da1f2 !important;
+}
+
+.socicon-linkedin:hover {
+    color: #0077b5 !important;
+}
+
+.socicon-angellist:hover {
+    color: #333 !important;
+}
+
+.socicon-github:hover {
+    color: #4078c0 !important;
+}
+
+.socicon-codepen:hover {
+    color: #2b2b2b !important;
+}
+
+.socicon-behance:hover {
+    color: #1769ff !important;
+}
+
+.socicon-instagram:hover {
+    color: #fcaf45 !important;
+}
+
+.socicon-facebook:hover {
+    color: #3b5998 !important;
+}
+
+/* .social:hover {
+	color: #3b3b3b !important;
+} */
+.btnSocial {
+    margin: 0 !important;
+    padding: 10pt 13pt;
+    background-color: #f05151 !important;
+    color: #fff !important;
+    font-size: 14pt;
+}
+
+.btnSocial:hover {
+    background-color: #3b3b3b !important;
+    color: #f05151 !important;
+}
+
+.socicon-invision {
+    background-image: url("../images/invision-off.svg");
+    background-position: 10pt 50%;
+    background-repeat: no-repeat;
+    background-size: 25pt 25pt;
+    padding: 10pt 13pt;
+}
+
+.socicon-invision:hover {
+    background-image: url("../images/invision-over.svg");
+}
+
+.socicon-alfred {
+    background-image: url("../images/alfred-off.svg");
+    background-position: 10pt 50%;
+    background-repeat: no-repeat;
+    background-size: 25pt 25pt;
+    padding: 10pt 13pt;
+    padding-left: 45pt;
+}
+
+.socicon-alfred:hover {
+    background-image: url("../images/alfred-over.svg");
+}
+
+.btnSocial:before {
+    padding-right: 10pt;
+}
+
+.btnSocialSVG {
+    padding-left: 35pt;
+}
+
+.modal-body.resume {
+    flex: none;
+}
+
+.modal-header.resume {
+    background: #f05151;
+}
+
+.coded {
+    background: #3b3b3b;
+    color: #fff;
+}
+
+.nav-link.active {
+    color: #f05151 !important;
+}
+
+.modal-dialog {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-content {
+  height: auto;
+  min-height: 100vh;
+  border-radius: 0;
+}
+
+.cat.badge.badge-lg.badge-pill {
+    margin-bottom: 15pt;
+}
+
+.modal-header h3 {
+    font-size: 22pt;
+}
+
+.closeWhite {
+    color: #fff;
+    text-shadow: 0 0 #fff;
+}
+
+.closeWhite:hover {
+    color: #f05151;
+    text-decoration: none;
+    opacity: .75;
+}
+
+/* -- MEDIA QUERIES -- */
+/* -- SM -- */
+@media (max-width: 1023px) {
+    a.nav-link {
+        padding: 10pt 0;
+        color: #fff !important;
+    }
+
+    #navbarResponsive {
+        position: fixed !important;
+        top: 60pt !important;
+        width: 100vw;
+        margin: 0 0 0 -43pt;
+        left: 43pt;
+        cursor: pointer;
+        background: #fff;
+        background: #f05151;
+        box-shadow: 0 4px 20px -2px #727272;
+    }
+
+    .navbar-collapse {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    ul.navbar-nav.ml-auto {
+        left: 0;
+        width: 100% !important;
+    }
+
+    ul.navbar-nav.ml-auto li {
+        width: 100%;
+        padding: 0 0 0 40pt;
+        background-color: #f05151;
+    }
+
+    ul.navbar-nav.ml-auto li:nth-child(1) {
+        background-color: #f05151;
+    }
+
+    ul.navbar-nav.ml-auto li:nth-child(2) {
+        background-color: #f77070;
+    }
+
+    ul.navbar-nav.ml-auto li:nth-child(3) {
+        background-color: #f98484;
+    }
+
+    ul.navbar-nav.ml-auto li:nth-child(4) {
+        background-color: #f39999;
+    }
+}
+
+/* -- SM -- */
+@media (max-width: 767px) {
+    .cat {
+        width: 100%;
+        margin: 8pt 0 0;
+    }
+
+    .modal-dialog.resume,
+    .resume .modal-content {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .para-pad div {
+        padding: 5pt 0;
+    }
+}
+
+/* -- SM -- */
+@media (max-width: 414px) {
+    .imgThumb {
+        width: 70%;
+    }
+
+    .imgMedium {
+        width: 100%;
+    }
+
+    .portfolioWrapper {
+        width: 100vw;
+        margin-right: 0;
+        margin-left: -22pt;
+    }
+
+    .btnMobile {
+        padding: 10pt;
+    }
+
+    .pad.btnMobile {
+        padding: 20pt;
+    }
+
+    .imgSlider {
+        height: auto !important;
+        min-height: auto !important;
+    }
+
+    .gif {
+        min-height: 265pt;
+    }
+
+    .slack-gif {
+        background: url("../images/slack-redact_take5.gif") no-repeat center center;
+    }
+
+    .otter-gif {
+        background: url("../images/otter.gif") no-repeat center center;
+    }
+
+    .delta-gif {
+        background: url("../images/delta1.png") no-repeat center center;
+    }
+
+    .delta-png {
+        background: url("../images/delta-gallery.png") no-repeat center center;
+    }
+
+    .walmart-gif {
+        background: url("../images/walmart.png") no-repeat center center;
+    }
+
+    #navbarResponsive {
+        position: fixed !important;
+        top: 60pt !important;
+        width: 121vw;
+        margin: 0 0 0 -31pt;
+        left: 0;
+        cursor: pointer;
+        background: #fff;
+        background: #f05151;
+        box-shadow: 0 4px 20px -2px #727272;
+    }
+
+    .img-profile {
+        margin: 0 auto;
+    }
+
+    .profile {
+        padding: 10pt;
+    }
+
+    .portfolioWrapper {
+        padding: 40pt 0 0 0;
+    }
+
+    .aCard,
+    .aCardLong {
+        margin: 0 10pt;
+        padding: 10pt;
+    }
+}
+
+@media (min-width: 415px) {
+    .gif {
+        padding: 50pt;
+        background: #fff;
+    }
+
+    .slack-gif {
+        background: url("../images/slack-redact_take5.gif") no-repeat center center !important;
+    }
+
+    .otter-gif {
+        background: url("../images/otter.gif") no-repeat center center !important;
+    }
+
+    .delta-gif {
+        background: url("../images/delta1.png") no-repeat center center !important;
+    }
+
+    .delta-png {
+        background: url("../images/delta-gallery.png") no-repeat center center !important;
+    }
+
+    .walmart-gif {
+        background: url("../images/walmart.png") no-repeat center center !important;
+    }
+
+    .slack-gif,
+    .otter-gif,
+    .delta-gif,
+    .delta-png {
+        padding: 60pt !important;
+        background-size: contain !important;
+    }
+
+    .walmart-gif {
+        padding: 0;
+        background-size: cover !important;
+    }
+}
+
+/* -- SM -- */
+@media (min-width: 414px) and (max-width:767px) {
+    .imgKaarma {
+        width: 40%;
+        height: auto;
+    }
+}
+
+/* -- SM & MD -- */
+@media (max-width:767px) {
+    .walmart-gif-mobile {
+        background: url("../images/walmart.png") no-repeat center center !important;
+        -webkit-background-size: cover !important;
+        background-size: cover !important;
+        background-position: top;
+        top: 20pt;
+    }
+
+    .walmart,
+    .walmart-gif-mobile {
+        max-height: 3880px;
+        height: auto;
+    }
+
+    .walmart-gif {
+        background: none;
+    }
+
+    .nav-link.active {
+        color: #2b2b2b !important;
+    }
+}
+
+/* -- MD -- */
+@media (min-width: 768px) {
+    .tagline {
+        height: 100%;
+        padding-top: 0;
+    }
+
+    .imgKanban {
+        width: 100%;
+        height: 100%;
+        /* padding-top: 300pt; */
+        background: url(../images/kanban.svg) no-repeat center center;
+    }
+
+    .img {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .imgThumb {
+        width: 35%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .imgKaarma {
+        width: 35%;
+        /* height: auto; */
+    }
+
+    .proj-list>.row {
+        padding: 0 0 10pt 30pt;
+    }
+
+    .portfolioWrapper {
+        padding: 40pt 0 20pt;
+    }
+}
+
+/* -- XL -- */
+@media (min-width: 1200px) {}
